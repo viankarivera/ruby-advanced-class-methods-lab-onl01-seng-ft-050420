@@ -36,7 +36,7 @@ class Song
   end
   def self.alphabetical
     @@all.sort_by {|song| song.name}
-    returns @@all
+    returns @@all {}
   end
   def self.new_from_filename(name)
     song_data = name.sub!(/.mp3/,'').split(' - ')
